@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contaminated
+        </title>
+		<style>
+             body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: brown;
+      border-radius: 50px;
+      margin-top: 20px;
+    }
+    #def {
+        color: white;
+        font-family: monospace;
+    }
+    #warning {
+      border: 2px solid #FF6347;
+      background-color: #ec4b39;
+      padding: 5px;
+      max-width: 400px;
+      text-align: center;
+      animation: fade 3s ease-in;
+      font-family: monospace;
+    }
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }}
+		</style>
+		<script>
+		</script>
+	</head>
+	
+	<body>
+        <h1>"Contaminated"</h1>
+        <p id="def">A very short narrative game.</p>
+        <div id="warning">
+            <p><strong>Warning:</strong>The content of this page may be frightening for some individuals.</p>
+          </div>
+        <button onclick="CommencerAJouer()">Begin</button>
+
+        <script>
+            function CommencerAJouer() {
+                alert("I see that you're a brave one! Good luck...");
+              window.location.href = "contaminated1.html";
+            }
+          </script>
+	</body>
+</html>

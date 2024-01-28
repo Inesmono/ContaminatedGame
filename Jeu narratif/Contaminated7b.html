@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contaminated</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      background-color: rgb(0, 0, 0);
+    }
+
+    #case {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #im {
+      max-width: 40%;
+      height: auto;
+      border-radius: 40px;
+    }
+
+    #story {
+      margin-bottom: 20px;
+      font-family: monospace;
+      font-size: 20px;
+      color: aliceblue;
+      animation: fade 1s steps(30, end)
+    }
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+       opacity: 1;
+      }}
+
+    #button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: rgb(185, 197, 250);
+      font-family: monospace;
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="case">
+    <img id="im" src="20240127_215459.jpg">
+    <p id="story">You grab her shoulders and try to
+        see her face <br> but she is
+        transforming into something beyond
+        comprehension...</p>
+    <button onclick="CommencerAJouer()" id="button">Continue</button>
+
+  </div>
+  <script>
+    function CommencerAJouer() {
+      window.location.href = "contaminated8b.html";
+    }
+    
+  </script>
+</body>
+</html>
